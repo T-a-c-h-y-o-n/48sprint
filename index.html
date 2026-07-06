@@ -439,13 +439,24 @@
     .contact-form input,.contact-form select,.contact-form textarea{
       font-family:'Inter',sans-serif;font-size:14px;
       padding:12px 14px;border:1px solid var(--line);border-radius:10px;
-      background:var(--surface);color:var(--ink);outline:none;width:100%;box-sizing:border-box;
+      background:var(--paper);color:var(--ink);outline:none;width:100%;box-sizing:border-box;
     }
     .contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--accent)}
     .contact-form textarea{grid-column:1 / -1;resize:vertical}
     .contact-form .btn{grid-column:1 / -1;justify-self:start;cursor:pointer;border:none}
     .form-note{color:var(--ink-2);font-size:13px}
     @media(max-width:560px){.contact-form{grid-template-columns:1fr}}
+    .example-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:8px}
+    .example-card{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--paper);display:flex;flex-direction:column;gap:12px}
+    .example-card.after{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+    .example-tag{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+    .example-tag.accent{color:var(--accent)}
+    .example-hero{font-size:20px;font-weight:700;line-height:1.3;color:var(--ink)}
+    .example-sub{font-size:14px;line-height:1.55;color:var(--ink-2)}
+    .example-cta{display:inline-block;align-self:flex-start;font-size:14px;font-weight:600;padding:9px 16px;border-radius:10px;background:var(--paper-2);color:var(--muted)}
+    .example-card.after .example-cta{background:var(--accent);color:#fff}
+    .example-note{font-size:12px;color:var(--ink-2);margin-top:auto;line-height:1.5}
+    @media(max-width:680px){.example-grid{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -461,6 +472,7 @@
       <div class="nav-links">
         <a href="#problem">Problem</a>
         <a href="#deliverables">Deliverables</a>
+        <a href="#example">Example</a>
         <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
       </div>
@@ -595,6 +607,34 @@
           <div class="proof-card"><span class="proof-number">30</span><p>Growth leaks mapped across the first outreach list.</p></div>
           <div class="proof-card"><span class="proof-number">5</span><p>Outbound angles per company after the sprint.</p></div>
           <div class="proof-card"><span class="proof-number">48h</span><p>Fast turnaround for a focused, practical deliverable.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="example">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-kicker">04 / Example</div>
+          <div>
+            <h2>What a teardown actually changes.</h2>
+            <p>Anonymized before/after from a recent AI construction landing page review. Same product, sharper message.</p>
+          </div>
+        </div>
+        <div class="example-grid">
+          <div class="example-card before">
+            <div class="example-tag">Before</div>
+            <div class="example-hero">AI-powered construction plan review</div>
+            <div class="example-sub">Catch errors before they cost you. Our platform uses machine learning to analyze plans.</div>
+            <div class="example-cta">Book a demo</div>
+            <p class="example-note">Generic category + feature. No buyer, no outcome, no reason to act now.</p>
+          </div>
+          <div class="example-card after">
+            <div class="example-tag accent">After</div>
+            <div class="example-hero">Eliminate rework before boots hit the ground</div>
+            <div class="example-sub">GCs lose 5-10% of project value to rework. We flag the 3 plan errors that cause it — before the crew arrives.</div>
+            <div class="example-cta">See your rework risk →</div>
+            <p class="example-note">Named buyer (GC) + quantified cost + specific trigger. Same product, 3x clearer.</p>
+          </div>
         </div>
       </div>
     </section>
