@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>48sprint — 48-hour growth sprint for AI/SaaS landing pages</title>
-  <meta name="description" content="I find the 3 growth leaks on your AI/SaaS landing page and rewrite the hero, CTA, outbound and 30-day launch plan in 48 hours. If it is not useful, you do not pay." />
+  <meta name="description" content="I find the 3 growth leaks on your AI/SaaS landing page and rewrite the hero, CTA, outbound and 30-day launch plan in 48 hours. If the deliverable is not sent within 48 hours, you do not pay." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -435,6 +435,17 @@
       .faq-item{grid-template-columns:1fr;gap:8px}
       .nav-links{display:none}
     }
+    .contact-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:560px;margin-bottom:14px}
+    .contact-form input,.contact-form select,.contact-form textarea{
+      font-family:'Inter',sans-serif;font-size:14px;
+      padding:12px 14px;border:1px solid var(--line);border-radius:10px;
+      background:var(--surface);color:var(--ink);outline:none;width:100%;box-sizing:border-box;
+    }
+    .contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--accent)}
+    .contact-form textarea{grid-column:1 / -1;resize:vertical}
+    .contact-form .btn{grid-column:1 / -1;justify-self:start;cursor:pointer;border:none}
+    .form-note{color:var(--ink-2);font-size:13px}
+    @media(max-width:560px){.contact-form{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
@@ -467,7 +478,7 @@
         <div class="hero-meta">
           <span class="live-pill"><span class="dot"></span>48h turnaround</span>
           <span class="live-pill accent"><span class="dot"></span>For AI/SaaS founders</span>
-          <span class="live-pill">If not useful, you don't pay</span>
+          <span class="live-pill">No pay if not delivered in 48h</span>
         </div>
         <h1>Your landing page has <em>3 growth leaks.</em> I find them in 48 hours.</h1>
         <p class="hero-lead">I tear down one AI/SaaS landing page at a time — hero, CTA, proof, outbound, launch angle — and hand you a sharper growth story you can ship the same week. No audits, no decks, no fluff.</p>
@@ -494,12 +505,12 @@
           <div class="stat">
             <div class="stat-label">Risk</div>
             <div class="stat-value accent">0<span class="unit"> upfront</span></div>
-            <div class="stat-delta">not useful = no pay</div>
+            <div class="stat-delta">no pay if not delivered</div>
           </div>
           <div class="stat">
-            <div class="stat-label"><span class="live-dot"></span>Scope</div>
-            <div class="stat-value">15<span class="unit">sprints</span></div>
-            <div class="stat-delta warn">10 active · 5 queued</div>
+            <div class="stat-label"><span class="live-dot"></span>Targets</div>
+            <div class="stat-value">50<span class="unit">startups</span></div>
+            <div class="stat-delta neutral">researched for outreach</div>
           </div>
         </div>
       </div>
@@ -601,7 +612,7 @@
           <div class="step"><span class="step-num">STEP 01</span><h3>Send your page</h3><p>Share your landing page, current positioning and target buyer.</p></div>
           <div class="step"><span class="step-num">STEP 02</span><h3>I find leaks</h3><p>I identify the biggest messaging, proof and CTA issues.</p></div>
           <div class="step"><span class="step-num">STEP 03</span><h3>I rewrite assets</h3><p>You get hero copy, CTA, outbound messages and content angles.</p></div>
-          <div class="step"><span class="step-num">STEP 04</span><h3>Use or pass</h3><p>If it is not useful, you do not pay. If it is, you can ship immediately.</p></div>
+          <div class="step"><span class="step-num">STEP 04</span><h3>Use or ship</h3><p>Receive the deliverable within 48 hours, then ship it or ask for one free revision. If it is not delivered on time, you do not pay.</p></div>
         </div>
       </div>
     </section>
@@ -612,7 +623,7 @@
           <div class="section-kicker">05 / Pricing</div>
           <div>
             <h2>Three ways to start.</h2>
-            <p>Pick a tier based on how deep you want to go. All packages include a 7-day "if you do not find it useful, you do not pay" guarantee.</p>
+            <p>Pick a tier based on how deep you want to go. All packages include a guarantee: if the deliverable is not sent within 48 hours, you do not pay.</p>
           </div>
         </div>
 
@@ -621,21 +632,21 @@
             <h3>Mini Teardown</h3>
             <p>Quick read of your landing page. PDF report in 24 hours.</p>
             <div class="price">$199<small> / one-time</small></div>
-            <div class="price-guarantee">7-day money-back guarantee</div>
+            <div class="price-guarantee">No pay if not delivered in 48h</div>
             <ul class="deliverables-list">
               <li>Landing page teardown (PDF)</li>
               <li>Hero rewrite suggestion</li>
               <li>3 growth leaks identified</li>
               <li>New CTA idea</li>
             </ul>
-            <a class="btn btn-ghost" href="mailto:hello@48sprint.com?subject=Mini%20Teardown%20(199%24)">Start with Mini →</a>
+            <a class="btn btn-ghost" href="#contact">Start with Mini →</a>
           </div>
 
           <div class="price-card featured">
             <h3>48-Hour Growth Sprint</h3>
             <p>For one AI/SaaS landing page and one target buyer segment.</p>
             <div class="price">$499<small> / sprint</small></div>
-            <div class="price-guarantee">7-day money-back · most popular</div>
+            <div class="price-guarantee">No pay if not delivered in 48h · most popular</div>
             <ul class="deliverables-list">
               <li>Everything in Mini Teardown</li>
               <li>5 outbound message templates</li>
@@ -644,14 +655,14 @@
               <li>48-hour delivery</li>
               <li>1 revision round</li>
             </ul>
-            <a class="btn" href="mailto:hello@48sprint.com?subject=Growth%20Sprint%20(499%24)">Book a Sprint →</a>
+            <a class="btn" href="#contact">Book a Sprint →</a>
           </div>
 
           <div class="price-card">
             <h3>Full Execution</h3>
             <p>Sprint + first 50 outreach messages sent for you. Done-for-you.</p>
             <div class="price">$999<small> / project</small></div>
-            <div class="price-guarantee">7-day money-back · 80% mid-exec</div>
+            <div class="price-guarantee">No pay if not delivered in 48h · 80% mid-exec</div>
             <ul class="deliverables-list">
               <li>Everything in Growth Sprint</li>
               <li>First 50 outreach messages sent</li>
@@ -659,7 +670,7 @@
               <li>2 revision rounds</li>
               <li>30-min follow-up call</li>
             </ul>
-            <a class="btn btn-ghost" href="mailto:hello@48sprint.com?subject=Full%20Execution%20(999%24)">Get Full Execution →</a>
+            <a class="btn btn-ghost" href="#contact">Get Full Execution →</a>
           </div>
         </div>
       </div>
@@ -697,11 +708,23 @@
     <section id="contact" class="cta-band">
       <div class="container">
         <h2>Send me your landing page. I'll send back the growth leaks.</h2>
-        <p>Start with a $199 Mini Teardown to see how I work, or jump into a 48-Hour Growth Sprint for $499. Full Execution ($999) is for teams that want the first 50 outreach messages sent for them. All packages come with a 7-day "if you do not find it useful, you do not pay" guarantee.</p>
-        <div class="hero-actions">
-          <a class="btn" href="mailto:hello@48sprint.com?subject=AI%20SaaS%20Growth%20Sprint">Send your landing page →</a>
-          <a class="btn btn-ghost" href="#deliverables">Review the sprint</a>
-        </div>
+        <p>Start with a $199 Mini Teardown to see how I work, or jump into a 48-Hour Growth Sprint for $499. Full Execution ($999) is for teams that want the first 50 outreach messages sent for them. All packages come with a guarantee: if the deliverable is not sent within 48 hours, you do not pay.</p>
+        <form class="contact-form" action="https://formspree.io/f/xzdlwvjq" method="POST">
+          <input type="hidden" name="_subject" value="New Sprint inquiry from 48sprint" />
+          <input type="hidden" name="_replyto" value="alp2erk@gmail.com" />
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Work email" required />
+          <input type="url" name="landing" placeholder="Landing page URL" />
+          <select name="package">
+            <option value="">Which sprint?</option>
+            <option value="mini">Mini Teardown — $199</option>
+            <option value="growth">Growth Sprint — $499</option>
+            <option value="full">Full Execution — $999</option>
+          </select>
+          <textarea name="message" placeholder="One line on what you are launching" rows="3"></textarea>
+          <button type="submit" class="btn">Send your landing page →</button>
+        </form>
+        <p class="form-note">I reply within 24 hours. No deliverable sent in 48h? You do not pay.</p>
       </div>
     </section>
   </main>
@@ -713,13 +736,13 @@
         <a href="#problem">Problem</a>
         <a href="#deliverables">Deliverables</a>
         <a href="#pricing">Pricing</a>
-        <a href="mailto:hello@48sprint.com">hello@48sprint.com</a>
+        <a href="mailto:alp2erk@gmail.com">alp2erk@gmail.com</a>
       </div>
     </div>
   </footer>
   <script>
     (function(){
-      const theme = localStorage.getItem('48sprint-theme') || 'dark';
+      const theme = localStorage.getItem('48sprint-theme') || 'light';
       document.documentElement.setAttribute('data-theme', theme);
       const btn = document.getElementById('themeBtn');
       btn.addEventListener('click', () => {
